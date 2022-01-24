@@ -1,0 +1,19 @@
+Place all your object model files here, for example: userObject.ts
+
+// File: src/model/userObject.ts
+
+export interface userObject {
+email: string
+password: string
+}
+
+export const initUser = (): userObject => ({
+email: '',
+password: '',
+})
+
+Next, create an index and add model object for easy access, example: index.ts
+
+// File: src/model/index.ts
+
+export \* from './userObject'
