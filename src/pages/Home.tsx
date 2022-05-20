@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text} from 'react-native';
 import styled from 'styled-components/native';
+import Layout from '../components/Layout';
 
 const HomeView = styled.View`
   flex: 1;
@@ -11,7 +12,9 @@ const HomeView = styled.View`
 const HomeScreen: React.FC = () => {
   return (
     <HomeView>
-      <Text>Home Screen</Text>
+      <Layout>
+        <Text>Home Screen</Text>
+      </Layout>
     </HomeView>
   );
 };
