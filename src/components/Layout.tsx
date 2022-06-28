@@ -9,7 +9,6 @@ const LayoutView = styled.View`
 const Layout: React.FC = ({children}) => {
   return (
     <LayoutView>
-      <HomeLogo width={100} height={100} />
       {children}
     </LayoutView>
   );
