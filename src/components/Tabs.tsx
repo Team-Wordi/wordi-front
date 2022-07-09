@@ -17,12 +17,20 @@ const BottomTabs = () => {
       screenOptions={({ route }) => ({
         tabBarActiveTintColor: '#417FFF',
         tabBarInactiveTintColor: '#C6C9CE',
+        tabBarStyle: {
+          position: "absolute",
+          height: 90,
+          fontSize: 11,
+          borderRadius: 40,
+          borderColor: '#EAF5FF',
+          borderSize: 1,
+        },
         tabBarIcon: ({ color }) => {
           if (route.name === '홈') return <HomeIcon width={24} height={24} fill={color} />
           else if (route.name === '멘토링') return <MentoringIcon width={24} height={24} fill={color} />
           else if (route.name === '신청내역') return <RegisteredIcon width={24} height={24} fill={color} />
           else if (route.name === '마이') return <MyIcon width={24} height={24} fill={color} />
-        }}      
+        }}
       )}
     >
       <Tab.Screen name="홈" component={HomeScreen} />
