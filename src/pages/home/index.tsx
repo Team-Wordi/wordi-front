@@ -1,21 +1,19 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, View} from 'react-native';
 import styled from 'styled-components/native';
-import Layout from '../components/Layout';
-
-const HomeView = styled.View`
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-`;
+import Layout from '../../components/Layout';
+import Header from './components/Header';
 
 const HomeScreen: React.FC = () => {
   return (
-    <HomeView>
+    <View>
+      <Header>
+        <Text>header</Text>
+      </Header>
       <Layout>
         <Text>Home Screen</Text>
       </Layout>
-    </HomeView>
+    </View>
   );
 };
 export default HomeScreen;
