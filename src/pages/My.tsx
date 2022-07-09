@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, View} from 'react-native';
 import styled from 'styled-components/native';
 import Layout from '../components/Layout';
 
@@ -9,13 +9,13 @@ const HomeView = styled.View`
   justify-content: center;
 `;
 
-const HomeScreen: React.FC = () => {
+const MyScreen: React.FC = () => {
   return (
-    <HomeView>
+    <View>
       <Layout>
-        <Text>Home Screen</Text>
+        <Text>My Screen</Text>
       </Layout>
-    </HomeView>
+    </View>
   );
 };
-export default HomeScreen;
+export default MyScreen;

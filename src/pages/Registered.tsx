@@ -1,21 +1,21 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, View} from 'react-native';
 import styled from 'styled-components/native';
 import Layout from '../components/Layout';
 
-const HomeView = styled.View`
+const RegisteredView = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
 `;
 
-const HomeScreen: React.FC = () => {
+const RegisteredScreen: React.FC = () => {
   return (
-    <HomeView>
+    <View>
       <Layout>
-        <Text>Home Screen</Text>
+        <Text>Registered Screen</Text>
       </Layout>
-    </HomeView>
+    </View>
   );
 };
-export default HomeScreen;
+export default RegisteredScreen;
