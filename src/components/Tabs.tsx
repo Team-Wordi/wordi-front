@@ -11,10 +11,11 @@ import RegisteredIcon from '../assets/icons/registered.svg';
 
 const Tab = createBottomTabNavigator();
 
-const BottomTabs = () => {
+export const TabNavigator = () => {
   return (
     <Tab.Navigator 
       screenOptions={({ route }) => ({
+        headerShown: false,
         tabBarActiveTintColor: '#417FFF',
         tabBarInactiveTintColor: '#C6C9CE',
         tabBarStyle: {
@@ -40,5 +41,3 @@ const BottomTabs = () => {
     </Tab.Navigator>
   );
 };
-
-export default BottomTabs;

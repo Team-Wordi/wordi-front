@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import { Header } from './header/Header';
 
 interface LayoutProps {
-  header: React.ReactNode
+  header?: React.ReactNode
   children: React.ReactNode
 }
 
