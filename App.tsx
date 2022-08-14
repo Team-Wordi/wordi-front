@@ -9,18 +9,15 @@
  */
 
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {RecoilRoot} from 'recoil';
-import BottomTabs from './src/components/Tabs';
-
-const Stack = createNativeStackNavigator();
+import { NavigationContainer } from '@react-navigation/native';
+import { RecoilRoot } from 'recoil';
+import { DrawerNavigator } from './src/components/drawer/Drawer';
 
 const App = () => {
   return (
     <RecoilRoot>
       <NavigationContainer>
-        <BottomTabs />
+        <DrawerNavigator />
       </NavigationContainer>
     </RecoilRoot>
   );

@@ -1,13 +1,8 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import { Text, View } from 'react-native';
 import styled from 'styled-components/native';
-import Layout from '../components/Layout';
 
-const HomeView = styled.View`
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-`;
+import { Layout } from '../components/Layout';
 
 const MentoringScreen: React.FC = () => {
   return (
@@ -18,4 +13,5 @@ const MentoringScreen: React.FC = () => {
     </View>
   );
 };
+
 export default MentoringScreen;

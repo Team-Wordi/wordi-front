@@ -1,17 +1,21 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import HomeLogo from '../assets/icons/home.svg';
+import { Header } from './header/Header';
 
-const LayoutView = styled.View`
-  background-color: red;
-`;
+interface LayoutProps {
+  header?: React.ReactNode
+  children: React.ReactNode
+}
 
-const Layout: React.FC = ({children}) => {
+export const Layout = ({header, children}: LayoutProps) => {
   return (
     <LayoutView>
+      <Header>{header}</Header>
       {children}
     </LayoutView>
   );
 };
 
-export default Layout;
+const LayoutView = styled.View`
+  background: #EAF5FF;
+`;

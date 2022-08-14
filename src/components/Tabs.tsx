@@ -11,10 +11,11 @@ import RegisteredIcon from '../assets/icons/registered.svg';
 
 const Tab = createBottomTabNavigator();
 
-const BottomTabs = () => {
+export const TabNavigator = () => {
   return (
     <Tab.Navigator 
       screenOptions={({ route }) => ({
+        headerShown: false,
         tabBarActiveTintColor: '#417FFF',
         tabBarInactiveTintColor: '#C6C9CE',
         tabBarStyle: {
@@ -33,12 +34,10 @@ const BottomTabs = () => {
         }}
       )}
     >
-      <Tab.Screen name="홈" component={HomeScreen} />
-      <Tab.Screen name="멘토링" component={MentoringScreen} />
-      <Tab.Screen name="신청내역" component={RegisteredScreen} />
-      <Tab.Screen name="마이" component={MyScreen} />
+      <Tab.Screen name="홈" component={HomeScreen} options={{headerTransparent: true, headerTitle: ''}} />
+      <Tab.Screen name="멘토링" component={MentoringScreen} options={{headerTransparent: true}} />
+      <Tab.Screen name="신청내역" component={RegisteredScreen} options={{headerTransparent: true}} />
+      <Tab.Screen name="마이" component={MyScreen} options={{headerTransparent: true}} />
     </Tab.Navigator>
   );
 };
-
-export default BottomTabs;
