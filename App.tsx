@@ -9,16 +9,13 @@
  */
 
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { RecoilRoot } from 'recoil';
-import { DrawerNavigator } from './src/components/drawer/Drawer';
+import MainScreen from './src/pages/Main';
 
 const App = () => {
   return (
     <RecoilRoot>
-      <NavigationContainer>
-        <DrawerNavigator />
-      </NavigationContainer>
+      <MainScreen />
     </RecoilRoot>
   );
 };

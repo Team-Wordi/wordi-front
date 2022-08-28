@@ -1,9 +1,9 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from '../pages/Home';
-import MentoringScreen from '../pages/Mentoring';
-import RegisteredScreen from '../pages/Registered';
-import MyScreen from '../pages/My';
+import HomeScreen from '../pages/home/Home';
+import MentoringScreen from '../pages/home/Mentoring';
+import RegisteredScreen from '../pages/home/Registered';
+import MyScreen from '../pages/home/My';
 import HomeIcon from '../assets/icons/home.svg';
 import MentoringIcon from '../assets/icons/mentoring.svg';
 import MyIcon from '../assets/icons/my.svg';
